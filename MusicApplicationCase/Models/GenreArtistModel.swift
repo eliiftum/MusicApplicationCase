@@ -21,4 +21,27 @@ struct GenresOfArtist : Codable{
     let radio : Bool?
     let tracklist : String?
     let type : String?
+    
+    internal init(id: Int? = nil,
+                  name: String? = nil,
+                  picture: String? = nil,
+                  picture_small: String? = nil,
+                  picture_medium: String? = nil,
+                  picture_big: String? = nil,
+                  picture_xl: String? = nil,
+                  radio: Bool? = nil,
+                  tracklist: String? = nil,
+                  type: String? = nil) {
+        
+        self.id = id
+        self.name = name
+        self.picture = picture
+        self.picture_small = picture_small
+        self.picture_medium = picture_medium
+        self.picture_big = picture_big
+        self.picture_xl = picture_xl
+        self.radio = radio
+        self.tracklist = tracklist
+        self.type = type
+    }
 }

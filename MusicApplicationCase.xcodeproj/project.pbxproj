@@ -17,6 +17,10 @@
 		DD8848902A0A6BDD0049541C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88488F2A0A6BDD0049541C /* NetworkManager.swift */; };
 		DD8848922A0A73B40049541C /* GenreArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8848912A0A73B40049541C /* GenreArtistModel.swift */; };
 		DD8848942A0A75720049541C /* GenreArtistDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8848932A0A75720049541C /* GenreArtistDetailModel.swift */; };
+		DD8848962A0A7ACC0049541C /* GenreArtistAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8848952A0A7ACC0049541C /* GenreArtistAlbumModel.swift */; };
+		DD8848A22A0B98CA0049541C /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8848A12A0B98CA0049541C /* FavoriteVC.swift */; };
+		DD8848A52A0B9ED80049541C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8848A42A0B9ED80049541C /* HomeCollectionViewCell.swift */; };
+		DD8848AA2A0C1B570049541C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8848A92A0C1B570049541C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		DD88488F2A0A6BDD0049541C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DD8848912A0A73B40049541C /* GenreArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreArtistModel.swift; sourceTree = "<group>"; };
 		DD8848932A0A75720049541C /* GenreArtistDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreArtistDetailModel.swift; sourceTree = "<group>"; };
+		DD8848952A0A7ACC0049541C /* GenreArtistAlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreArtistAlbumModel.swift; sourceTree = "<group>"; };
+		DD8848A12A0B98CA0049541C /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		DD8848A42A0B9ED80049541C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD8848A92A0C1B570049541C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +72,13 @@
 		DD8848712A0A68FB0049541C /* MusicApplicationCase */ = {
 			isa = PBXGroup;
 			children = (
+				DD8848A72A0C1B310049541C /* Utilities */,
 				DD88488C2A0A6AE90049541C /* Models */,
 				DD88488B2A0A6ADE0049541C /* Network */,
-				DD8848872A0A6A530049541C /* Scene */,
+				DD8848872A0A6A530049541C /* Controllers */,
 				DD8848862A0A6A420049541C /* Delegates */,
-				DD8848782A0A68FB0049541C /* Main.storyboard */,
+				DD8848A62A0C1A2F0049541C /* View */,
 				DD88487B2A0A68FB0049541C /* Assets.xcassets */,
-				DD88487D2A0A68FB0049541C /* LaunchScreen.storyboard */,
 				DD8848802A0A68FB0049541C /* Info.plist */,
 			);
 			path = MusicApplicationCase;
@@ -85,36 +93,22 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		DD8848872A0A6A530049541C /* Scene */ = {
+		DD8848872A0A6A530049541C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD88489E2A0B98610049541C /* Favorites */,
 				DD8848882A0A6A640049541C /* HomeView */,
 			);
-			path = Scene;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		DD8848882A0A6A640049541C /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				DD8848892A0A6A6B0049541C /* ViewModel */,
-				DD88488A2A0A6A830049541C /* View */,
+				DD8848762A0A68FB0049541C /* HomeViewController.swift */,
+				DD8848A32A0B9EA90049541C /* Cells */,
 			);
 			path = HomeView;
-			sourceTree = "<group>";
-		};
-		DD8848892A0A6A6B0049541C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DD88488A2A0A6A830049541C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DD8848762A0A68FB0049541C /* HomeViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		DD88488B2A0A6ADE0049541C /* Network */ = {
@@ -131,8 +125,50 @@
 				DD88488D2A0A6B1A0049541C /* GenreMainModel.swift */,
 				DD8848912A0A73B40049541C /* GenreArtistModel.swift */,
 				DD8848932A0A75720049541C /* GenreArtistDetailModel.swift */,
+				DD8848952A0A7ACC0049541C /* GenreArtistAlbumModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DD88489E2A0B98610049541C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				DD8848A12A0B98CA0049541C /* FavoriteVC.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		DD8848A32A0B9EA90049541C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD8848A42A0B9ED80049541C /* HomeCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD8848A62A0C1A2F0049541C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD8848782A0A68FB0049541C /* Main.storyboard */,
+				DD88487D2A0A68FB0049541C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD8848A72A0C1B310049541C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DD8848A82A0C1B390049541C /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DD8848A82A0C1B390049541C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DD8848A92A0C1B570049541C /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +242,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8848962A0A7ACC0049541C /* GenreArtistAlbumModel.swift in Sources */,
+				DD8848AA2A0C1B570049541C /* Constants.swift in Sources */,
 				DD8848772A0A68FB0049541C /* HomeViewController.swift in Sources */,
 				DD8848732A0A68FB0049541C /* AppDelegate.swift in Sources */,
 				DD8848922A0A73B40049541C /* GenreArtistModel.swift in Sources */,
 				DD8848902A0A6BDD0049541C /* NetworkManager.swift in Sources */,
+				DD8848A52A0B9ED80049541C /* HomeCollectionViewCell.swift in Sources */,
 				DD88488E2A0A6B1A0049541C /* GenreMainModel.swift in Sources */,
 				DD8848942A0A75720049541C /* GenreArtistDetailModel.swift in Sources */,
+				DD8848A22A0B98CA0049541C /* FavoriteVC.swift in Sources */,
 				DD8848752A0A68FB0049541C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
