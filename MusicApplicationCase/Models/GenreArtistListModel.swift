@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GenreArtistModel : Codable{
+struct GenreArtistListModel : Codable{
     var data : [GenresOfArtist]
 }
 struct GenresOfArtist : Codable{

@@ -11,8 +11,10 @@ import Foundation
 struct Constants {
     static let baseURL =  "https://api.deezer.com/"
     static let genreEndpoint = "genre"
-    static let artistEndpoint = "artists"
+    static let artistsEndpoint = "artists"
+    static let artistEndpoint = "artist"
     static let albumEndpoint = "album"
+    static let albumsEndpoint = "albums"
     static let slash = "/"
     
 }

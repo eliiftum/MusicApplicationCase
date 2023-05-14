@@ -9,9 +9,12 @@ import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var categoryTitleLabel: UILabel!
-    @IBOutlet weak var categoryImageView: UIImageView!
+    @IBOutlet private var categoryTitleLabel: UILabel!
+    @IBOutlet private var categoryImageView: UIImageView!
     
-    
+    func configure (genres: Genres?){
+        categoryTitleLabel.text = genres?.name ?? ""
+        categoryImageView.kfImage(url: genres?.picture_medium ?? "")
+    }
     
 }

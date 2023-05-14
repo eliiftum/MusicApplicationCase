@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GenreArtistDetailModel : Codable {
+struct ArtistDetailModel : Codable {
     
     let id : Int?
     let name : String?
@@ -52,3 +52,4 @@ struct GenreArtistDetailModel : Codable {
         self.type = type
     }
 }
+
