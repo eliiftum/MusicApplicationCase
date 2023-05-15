@@ -54,8 +54,30 @@ extension FavoriteVC : UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return favorites?.count ?? 0
+ 
+        if self.favorites?.count ?? 0 > 0 {
+
+            self.collectionView.backgroundView = nil
+
+            return self.favorites?.count ?? 0
+        }
+        else {
+            let rect = CGRect(x: 0,
+                              y: 0,
+                              width: self.collectionView.bounds.size.width,
+                              height: self.collectionView.bounds.size.height)
+            let noDataLabel: UILabel = UILabel(frame: rect)
+            noDataLabel.text = "No favorite tracks yet."
+            noDataLabel.textAlignment = .center
+            noDataLabel.textColor = UIColor.gray
+            noDataLabel.sizeToFit()
+
+            self.collectionView.backgroundView = noDataLabel
+
+            return 0
+        }
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.width-20, height: 128)
     }
