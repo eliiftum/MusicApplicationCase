@@ -17,4 +17,11 @@
 - I used segue for navigation between pages.
 
 ## Preview
-https://github.com/eliiftum/MusicApplicationCase/blob/af81d1b25f3d6207f55ac073f7331ccfa3349cf5/MusicApplicationCase.mp4
+
+
+
+https://github.com/eliiftum/MusicApplicationCase/assets/65923218/541982c7-2949-409b-b4de-4e7d31eb1302
+
+
+
+
